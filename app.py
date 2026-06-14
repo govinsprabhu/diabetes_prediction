@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Load the trained model and scaler
 # Using absolute paths or robust relative paths if running from varying directories
-BASE_DIR = os.path.dirname(os.path.abspath(__name__))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(BASE_DIR, 'diabetes_model.pkl')
 scaler_path = os.path.join(BASE_DIR, 'scaler.pkl')
 
